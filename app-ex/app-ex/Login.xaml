@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_ex.MainPage">
+
+    <StackLayout>
+        
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+               HeightRequest="50" />
+        
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Registro de Estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Usuario " FontSize="20" FontAttributes="Bold" TextColor="#070c0f"/>
+        <Entry x:Name="txtusuario" Keyboard="Numeric" Placeholder="Digite" HorizontalTextAlignment="Center"/>
+
+
+        <Label Text="Clave " FontSize="20" FontAttributes="Bold" TextColor="#070c0f"/>
+        <Entry x:Name="txtclave" Keyboard="Default" Placeholder="Digite" HorizontalTextAlignment="Center"
+               IsPassword="True"/>
+
+
+        <Button x:Name="bntIngreso" Text="Iniciar" FontSize="Title"
+                FlexLayout.AlignSelf="Stretch" BackgroundColor="#5B33FF"
+                Clicked="bntIngreso_Clicked" CornerRadius="5" HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand">
+
+        </Button>
+
+    </StackLayout>
+
+</ContentPage>
